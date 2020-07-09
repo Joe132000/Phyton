@@ -7,7 +7,7 @@ Created on Fri Jun 19 12:26:43 2020
 espacio=' '
 nombre=input('ingrese su nombre: ')
 lastname=input('ingrese su apellido: ')
-age=input('ingrese su edad: ')
+age=int(input('ingrese su edad: '))
 location=input('ingrese su localizacion(Pais): ')
 
 print('\n','Sus datos personales son:','\n'
@@ -17,14 +17,14 @@ print('\n','Sus datos personales son:','\n'
       'Localizacion: ',location,'\n',
       )
 if age>=1 and age<=12:
-    'su edad esta en el rango de 1-12 \'niñez\''
+    print('su edad esta en el rango de 1-12 \'niñez\'')
 elif age>=13 and age<=18:
-    'su edad esta en el rango de 13-18 \'adolescencia\''
+    print('su edad esta en el rango de 13-18 \'adolescencia\'')
 elif age>=19 and age<=30:
-    'su edad esta en el rango de 19-30 \'juventud\''
+    print('su edad esta en el rango de 19-30 \'juventud\'')
 elif age>=31 and age<=59:
-    'su edad esta en el rango de 31-59 \'adultez\''
+    print('su edad esta en el rango de 31-59 \'adultez\'')
 elif age>=60 and age<=120:
-    'su edad esta en el rango de 60-120 \'vejez\''
-else
+    print('su edad esta en el rango de 60-120 \'vejez\'')
+else:
     print('su edad se encuentra fuera de los rangos predeterminados')
